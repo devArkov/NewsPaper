@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'public',
     'news',
     'accounts',
 ]
@@ -114,7 +115,6 @@ STATIC_URL = 'static/'
 LOGIN_URL = 'login'
 
 LOGOUT_REDIRECT_URL = 'home'
-
 LOGIN_REDIRECT_URL = 'home'
 
 # Default primary key field type
