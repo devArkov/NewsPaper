@@ -10,8 +10,9 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
+    path('accounts/profile/', views.ProfileView.as_view(), name='profile'),
 
     # Django auth
     path('accounts/login', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='login'),
-    path('accounts/profile', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='profile'),
+    path('accounts/logout', auth_views.LogoutView.as_view(), name='logout'),
 ]
