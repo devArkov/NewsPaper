@@ -110,12 +110,12 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# Auth
+# Django auth settings
 
-LOGIN_URL = 'login'
+LOGIN_URL = 'accounts:login'
 
-LOGOUT_REDIRECT_URL = 'home'
-LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'public:home'
+LOGIN_REDIRECT_URL = 'public:home'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
