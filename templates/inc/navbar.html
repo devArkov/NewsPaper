@@ -1,10 +1,14 @@
 <nav>
+    <!--  Public  -->
     {% url 'public:home' as home_url %}
     <span>{% if request.path == home_url %}Home{% else %}<a href="{{ home_url }}">Home</a>{% endif %}</span>
+    {% url 'public:news' as news_url %}
+    <span>{% if request.path == news_url %}News{% else %}<a href="{{ news_url }}">News</a>{% endif %}</span>
     {% url 'public:about' as about_url %}
     <span>{% if request.path == about_url %}About{% else %}<a href="{{ about_url }}">About</a>{% endif %}</span>
     {% url 'public:contact' as contact_url %}
     <span>{% if request.path == contact_url %}Contact{% else %}<a href="{{ contact_url }}">Contact</a>{% endif %}</span>
+    <!--  / Public  -->
 
     <!--  Auth  -->
     <span style="float: right;">

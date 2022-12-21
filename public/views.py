@@ -10,5 +10,9 @@ def about(request: HttpRequest) -> HttpResponse:
     return render(request, 'about.html')
 
 
+def news(request: HttpRequest) -> HttpResponse:
+    return render(request, 'news.html')
+
+
 def contact(request: HttpRequest) -> HttpResponse:
     return render(request, 'contact.html')
